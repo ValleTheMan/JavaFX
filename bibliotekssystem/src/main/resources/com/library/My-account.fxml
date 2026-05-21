@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane dividerPositions="0.13" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.library.MyAccountController">
+   <items>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Button fx:id="backButton" layoutX="14.0" layoutY="12.0" mnemonicParsing="false" text="Tillbaka" />
+            <Text layoutX="214.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Min Sida" textAlignment="CENTER" wrappingWidth="170.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="logoutButton" layoutX="506.0" layoutY="5.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="78.0" text="Logga ut" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="5.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Text fx:id="welcomeText" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Välkommen!">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="14.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mina aktuella lån:" />
+            
+            <ListView fx:id="loanListView" layoutX="14.0" layoutY="70.0" prefHeight="220.0" prefWidth="570.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="70.0" />
+            
+            <Button fx:id="returnButton" layoutX="14.0" layoutY="300.0" mnemonicParsing="false" text="Lämna tillbaka markerad" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" />
+         </children>
+      </AnchorPane>
+   </items>
+</SplitPane>
